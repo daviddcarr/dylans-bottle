@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    background: rgb(173,241,255);
+    background: radial-gradient(circle, rgba(173,241,255,1) 3%, rgba(72,70,102,1) 100%);
+    height: 100vh;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
