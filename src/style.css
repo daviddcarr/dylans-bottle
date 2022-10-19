@@ -20,3 +20,48 @@ body
     left: 0;
     outline: none;
 }
+
+#container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container .hover-text {
+    opacity: 0;
+    width: 300px;
+}
+#container:hover .hover-text {
+    animation: fadeOut 5s ease-in-out 0s 1;
+}
+
+.text-container {
+    padding: 20px;
+}
+
+.text-container ul {
+    list-style-type: none;
+}
+
+.text-container ul li {
+    color: white;
+    font-family: sans-serif;
+}
+.text-container ul li+li {
+    margin-top: 6px;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
